@@ -18,6 +18,7 @@ dependencies {
 
 tasks.withType(Test) {
     useJUnitPlatform()
+    systemProperty 'allure.results.directory', 'allure-results'
 
     testLogging {
         lifecycle {
